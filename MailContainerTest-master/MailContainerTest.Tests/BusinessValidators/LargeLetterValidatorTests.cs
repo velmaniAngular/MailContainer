@@ -1,6 +1,6 @@
 using System.Reflection;
 using MailContainerTest.Types;
-namespace MailContainerTest.BusinessValidators
+namespace MailContainerTest.BusinessValidators.Tests
 {
     [TestClass()]
     public class LargeLetterValidatorTests

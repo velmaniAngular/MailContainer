@@ -1,0 +1,19 @@
+Using  MailContainerTest.Data;
+namespace MailContainerTest.Factories
+{
+    public class MailContainerDataStoreFactories :IMailContainerDataStoreFactories
+    {
+        public MailContainer GetMailContainerDataStore(string dataStoreType)
+        {   
+            if (dataStoreType == "Backup")
+            {
+                return new BackupMailContainerDataStore();
+                
+            } else
+            {
+                return  new MailContainerDataStore();
+            }
+
+        }
+    }
+}
